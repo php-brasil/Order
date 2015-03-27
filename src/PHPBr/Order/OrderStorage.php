@@ -1,17 +1,17 @@
 <?php
-namespace Neto\Order;
+namespace PHPBr\Order;
 
 interface OrderStorage
 {
     /**
      * @param int $id
      *
-     * @return Neto\Order\Order
+     * @return PHPBr\Order\Order
      */
     public function find($id);
 
     /**
-     * @param Neto\Order\Order $order
+     * @param PHPBr\Order\Order $order
      */
     public function save(Order $order);
 }

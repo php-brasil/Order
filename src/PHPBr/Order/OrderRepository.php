@@ -1,21 +1,21 @@
 <?php
-namespace Neto\Order;
+namespace PHPBr\Order;
 
 class OrderRepository
 {
     /**
-     * @var Neto\Order\OrderStorage
+     * @var PHPBr\Order\OrderStorage
      */
     private $storage;
 
     /**
-     * @var Neto\Order\OrderPolicy
+     * @var PHPBr\Order\OrderPolicy
      */
     private $policy;
 
     /**
-     * @param Neto\Order\OrderStorage $storage
-     * @param Neto\Order\OrderPolicy $orderPolicy
+     * @param PHPBr\Order\OrderStorage $storage
+     * @param PHPBr\Order\OrderPolicy $orderPolicy
      */
     public function __construct(OrderStorage $storage, OrderPolicy $orderPolicy)
     {
@@ -26,7 +26,7 @@ class OrderRepository
     /**
      * @param int $id
      *
-     * @return Neto\Order\Order
+     * @return PHPBr\Order\Order
      */
     public function find($id)
     {
@@ -34,7 +34,7 @@ class OrderRepository
     }
 
     /**
-     * @param Neto\Order\Order $order
+     * @param PHPBr\Order\Order $order
      */
     public function save(Order $order)
     {

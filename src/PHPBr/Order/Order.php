@@ -1,5 +1,5 @@
 <?php
-namespace Neto\Order;
+namespace PHPBr\Order;
 
 class Order implements \IteratorAggregate
 {
@@ -19,7 +19,7 @@ class Order implements \IteratorAggregate
     public $status = Order::CREATED;
 
     /**
-     * @var array[Neto\Order\OrderItem]
+     * @var array[PHPBr\Order\OrderItem]
      */
     private $items = [];
 
@@ -32,7 +32,7 @@ class Order implements \IteratorAggregate
     }
 
     /**
-     * @param Neto\Order\OrderItem $item
+     * @param PHPBr\Order\OrderItem $item
      */
     public function addItem(OrderItem $item)
     {

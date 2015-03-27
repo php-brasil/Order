@@ -2,12 +2,10 @@
 
 ```php
 <?php
-require 'vendor/autoload.php';
-
-use Neto\Order\OrderRepository;
-use Neto\Order\OrderService;
-use Neto\Order\Service\SimpleOrderPolicy;
-use Neto\Order\Service\Storage\StaticStorage;
+use PHPBr\Order\OrderRepository;
+use PHPBr\Order\OrderService;
+use PHPBr\Order\Service\SimpleOrderPolicy;
+use PHPBr\Order\Service\Storage\StaticStorage;
 
 $orderRepository = new OrderRepository(new StaticStorage(),
                                        new SimpleOrderPolicy());

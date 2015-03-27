@@ -1,9 +1,9 @@
 <?php
-namespace Neto\Order\Service\Storage;
+namespace PHPBr\Order\Service\Storage;
 
-use \Neto\Order\Order;
-use \Neto\Order\OrderItem;
-use \Neto\Order\OrderStorage;
+use \PHPBr\Order\Order;
+use \PHPBr\Order\OrderItem;
+use \PHPBr\Order\OrderStorage;
 
 class StaticStorage implements OrderStorage
 {
@@ -26,7 +26,7 @@ class StaticStorage implements OrderStorage
     /**
      * @param int $id
      *
-     * @return Neto\Order\Order
+     * @return PHPBr\Order\Order
      */
     public function find($id)
     {
@@ -38,7 +38,7 @@ class StaticStorage implements OrderStorage
     }
 
     /**
-     * @param Neto\Order\Order $order
+     * @param PHPBr\Order\Order $order
      */
     public function save(Order $order)
     {

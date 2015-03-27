@@ -1,15 +1,15 @@
 <?php
-namespace Neto\Order;
+namespace PHPBr\Order;
 
 class OrderService
 {
     /**
-     * @var Neto\Order\OrderRepository
+     * @var PHPBr\Order\OrderRepository
      */
     private $repository;
 
     /**
-     * @param Neto\Order\OrderRepository
+     * @param PHPBr\Order\OrderRepository
      */
     public function __construct(OrderRepository $repository)
     {
@@ -43,7 +43,7 @@ class OrderService
     /**
      * @param int $id
      *
-     * @return Neto\Order\Order
+     * @return PHPBr\Order\Order
      * @throws \DomainException
      */
     private function getOrder($id)
@@ -60,7 +60,7 @@ class OrderService
     /**
      * @param int $id
      *
-     * @return Neto\Order\Order
+     * @return PHPBr\Order\Order
      */
     public function findOrder($id)
     {

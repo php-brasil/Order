@@ -1,13 +1,13 @@
 <?php
-namespace Neto\Order\Service;
+namespace PHPBr\Order\Service;
 
-use Neto\Order\Order;
-use Neto\Order\OrderPolicy;
+use PHPBr\Order\Order;
+use PHPBr\Order\OrderPolicy;
 
 class SimpleOrderPolicy implements OrderPolicy
 {
     /**
-     * @param Neto\Order\Order $order
+     * @param PHPBr\Order\Order $order
      *
      * @throws \Exception
      */

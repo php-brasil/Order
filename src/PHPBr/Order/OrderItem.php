@@ -1,5 +1,5 @@
 <?php
-namespace Neto\Order;
+namespace PHPBr\Order;
 
 class OrderItem
 {

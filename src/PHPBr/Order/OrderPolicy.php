@@ -1,10 +1,10 @@
 <?php
-namespace Neto\Order;
+namespace PHPBr\Order;
 
 interface OrderPolicy
 {
     /**
-     * @param Neto\Order\Order $order
+     * @param PHPBr\Order\Order $order
      *
      * @throws \Exception
      */
