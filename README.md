@@ -2,10 +2,17 @@
 
 ```php
 <?php
-$orderRepository = new Neto\Order\OrderRepository(new Neto\Order\Service\Storage\StaticStorage(),
-                                                  new Neto\Order\Service\SimpleOrderPolicy());
+require 'vendor/autoload.php';
 
-$orderService = new Neto\Order\OrderService($orderRepository);
+use Neto\Order\OrderRepository;
+use Neto\Order\OrderService;
+use Neto\Order\Service\SimpleOrderPolicy;
+use Neto\Order\Service\Storage\StaticStorage;
+
+$orderRepository = new OrderRepository(new StaticStorage(),
+                                       new SimpleOrderPolicy());
+
+$orderService = new OrderService($orderRepository);
 
 $order = $orderService->findOrder(1);
 
