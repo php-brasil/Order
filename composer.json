@@ -1,7 +1,8 @@
 {
     "autoload": {
         "psr-0": {
-            "": "src/"
+            "PHPBr\\": "src/",
+            "PHPBr\\Test\\": "tests/"
         }
     },
     "require-dev": {
