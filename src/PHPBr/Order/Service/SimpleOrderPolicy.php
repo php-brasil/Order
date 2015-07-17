@@ -30,14 +30,10 @@ class SimpleOrderPolicy implements OrderPolicy
 
     private function checkIfStatusIsValid(Order $order)
     {
-        switch ($order->status) {
-            case Order::CREATED;
-            case Order::APPROVED;
-            case Order::DENIED;
-            case Order::CANCELLED;
-                return true;
-            default:
-                throw new \DomainException('invalid order status');
+        if (in_array($order->status, [Order::CREATED, Order::APPROVED, Order::DENIED, Order::CANCELLED])) {
+            return true;
         }
+
+        throw new \DomainException('invalid order status');
     }
 }
